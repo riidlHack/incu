@@ -2,13 +2,13 @@ import React from 'react';
 
 // Tech
 import tech_image_1 from '../../image/Tech/31.png';
-import tech_image_2 from '../../image/Tech/32.png';
-import tech_image_3 from '../../image/Tech/33.png';
+import tech_image_3 from '../../image/Tech/32.png';
+import tech_image_2 from '../../image/Tech/33.png';
 import tech_image_4 from '../../image/Tech/34.png';
 
 // Leads
-import leads_image_1 from '../../image/Leads/Lead_1.png';
-import leads_image_2 from '../../image/Leads/Lead_2.png';
+import leads_image_2 from '../../image/Leads/Lead_1.png';
+import leads_image_1 from '../../image/Leads/Lead_2.png';
 
 // PR
 import pr_image_1 from '../../image/PR/8.png';
