@@ -3,7 +3,7 @@ import { Trophy, Award, Star, Target } from "lucide-react";
 const prizes = [
   {
     title: "Innovation Award",
-    amount: "Rs XX,XXX",
+    amount: "Rs 60,000",
     description: "Most Creative Solution",
     icon: Star,
     gradient: "from-gray-200 to-gray-400",
@@ -11,7 +11,7 @@ const prizes = [
   },
   {
     title: "Grand Prize",
-    amount: "Rs X,XX,XXX",
+    amount: "Rs 1,00,000",
     description: "Best Overall Project",
     icon: Trophy,
     gradient: "from-amber-300 via-yellow-400 to-amber-600",
@@ -19,7 +19,7 @@ const prizes = [
   },
   {
     title: "Impact Prize",
-    amount: "Rs XX,XXX",
+    amount: "Rs 40,000",
     description: "Social Good Category",
     icon: Target,
     gradient: "from-orange-400 to-red-600",
@@ -38,7 +38,7 @@ export const PrizeSection = () => {
           </h2>
           <div className="glass-panel inline-block p-4 hover-glow">
             <p className="font-code text-2xl md:text-4xl font-bold text-neon-green">
-              Rs X,XX,XXX+
+              Rs 2,00,000+
             </p>
             <p className="text-muted-foreground font-heading uppercase tracking-wide">
               Total Rewards
