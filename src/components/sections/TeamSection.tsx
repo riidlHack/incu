@@ -16,8 +16,11 @@ import pr_image_2 from '../../image/PR/9.png';
 import pr_image_3 from '../../image/PR/10.png';
 import pr_image_4 from '../../image/PR/11.png';
 import pr_image_5 from '../../image/PR/12.png';
-import pr_image_6 from '../../image/PR/13.png';
+import pr_image_6 from '../../image/PR/Aryan_Kadam.png';
 import pr_image_7 from '../../image/PR/14.png';
+import pr_image_8 from '../../image/PR/Disha_Waghambare.png';
+import pr_image_9 from '../../image/PR/Vedant_Alshi.png';
+import pr_image_10 from '../../image/PR/Lavannya_Sutar.png';
 
 // Media
 import media_image_1 from '../../image/Media/16.png';
@@ -59,8 +62,12 @@ const allTeamMembers = [
   { name: 'Swanandi Jadhav', position: 'PR Core', image: pr_image_3, linkedin: 'https://www.linkedin.com/in/swanandi-jadhav-064525321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
   { name: 'Diksha Khandge', position: 'PR Core', image: pr_image_4, linkedin: 'http://www.linkedin.com/in/diksha-khandge-b5150b332' },
   { name: 'Princy Karani', position: 'PR Core', image: pr_image_5, linkedin: '' },
-  { name: 'Kareena Rohra', position: 'PR Core', image: pr_image_6, linkedin: 'https://www.linkedin.com/in/kareena-rohra-752628250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+  { name: 'Aryan Kadam', position: 'PR Core', image: pr_image_6, linkedin: '' },
   { name: 'Mahek Agnihotri', position: 'PR Core', image: pr_image_7, linkedin: '' },
+  { name: 'Disha Waghambare', position: 'PR Core', image: pr_image_8, linkedin: '' },
+  { name: 'Vedant Alshi', position: 'PR Core', image: pr_image_9, linkedin: '' },
+  { name: 'Lavannya Sutar', position: 'PR Core', image: pr_image_10, linkedin: '' },
+
   // Media
   { name: 'Siddhi Jain', position: 'Media Lead', image: media_image_1, linkedin: 'https://www.linkedin.com/in/siddhi-jain-957311241' },
   { name: 'Saloni Sawant', position: 'Media Core', image: media_image_2, linkedin: 'https://www.linkedin.com/in/saloni-sawant-78b513285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
