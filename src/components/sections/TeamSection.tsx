@@ -61,11 +61,11 @@ const allTeamMembers = [
   { name: 'Atharva Sawant', position: 'PR Core', image: pr_image_2, linkedin: 'https://www.linkedin.com/in/atharva-sawant10/' },
   { name: 'Swanandi Jadhav', position: 'PR Core', image: pr_image_3, linkedin: 'https://www.linkedin.com/in/swanandi-jadhav-064525321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
   { name: 'Diksha Khandge', position: 'PR Core', image: pr_image_4, linkedin: 'http://www.linkedin.com/in/diksha-khandge-b5150b332' },
-  { name: 'Princy Karani', position: 'PR Core', image: pr_image_5, linkedin: '' },
+  { name: 'Princy Karani', position: 'PR Core', image: pr_image_5, linkedin: 'https://www.linkedin.com/in/princy-karani-7a1621290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
   { name: 'Aryan Kadam', position: 'PR Core', image: pr_image_6, linkedin: '' },
   { name: 'Mahek Agnihotri', position: 'PR Core', image: pr_image_7, linkedin: '' },
   { name: 'Disha Waghambare', position: 'PR Core', image: pr_image_8, linkedin: '' },
-  { name: 'Vedant Alshi', position: 'PR Core', image: pr_image_9, linkedin: '' },
+  { name: 'Vedant Alshi', position: 'PR Core', image: pr_image_9, linkedin: 'https://www.linkedin.com/in/vedant-alshi-71834a378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
   { name: 'Lavannya Sutar', position: 'PR Core', image: pr_image_10, linkedin: '' },
 
   // Media
