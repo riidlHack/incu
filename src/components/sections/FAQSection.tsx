@@ -41,7 +41,6 @@ const faqs = [
     answer: "You retain full ownership of any IP you create. Some sponsor challenges may offer licensing opportunities, but participation is always optional."
   }
 ];
-
 const FAQItem = ({ faq, index }: { faq: any, index: number }) => {
   const [isOpen, setIsOpen] = useState(false);
 

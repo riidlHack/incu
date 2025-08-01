@@ -2,8 +2,8 @@ import React from 'react';
 
 // Tech
 import tech_image_1 from '../../image/Tech/31.png';
-import tech_image_3 from '../../image/Tech/32.png';
-import tech_image_2 from '../../image/Tech/33.png';
+import tech_image_2 from '../../image/Tech/32.png';
+import tech_image_3 from '../../image/Tech/33.png';
 import tech_image_4 from '../../image/Tech/34.png';
 
 // Leads
@@ -49,8 +49,8 @@ import sponsors_image_5 from '../../image/Sponsors/6.png';
 
 const allTeamMembers = [
   // Leads
-  { name: 'Rida Nakhuda', position: 'Lead Coordinator', image: leads_image_2, linkedin: 'https://www.linkedin.com/in/rida-nakhuda-5b019728a/' },
-  { name: 'Aayush Sadaye', position: 'Lead Coordinator', image: leads_image_1, linkedin: 'https://www.linkedin.com/in/aayush-innovatesss/' },
+  { name: 'Rida Nakhuda', position: 'Lead Coordinator', image: leads_image_1, linkedin: 'https://www.linkedin.com/in/rida-nakhuda-5b019728a/' },
+  { name: 'Aayush Sadaye', position: 'Lead Coordinator', image: leads_image_2, linkedin: 'https://www.linkedin.com/in/aayush-innovatesss/' },
   //Tech
   { name: 'Atharva Patankar', position: 'Tech Lead', image: tech_image_1, linkedin: 'https://www.linkedin.com/in/atharvapatankar?' },
   { name: 'Prem Gupta', position: 'Tech Core', image: tech_image_3, linkedin: 'https://www.linkedin.com/in/prem-gupta-616489335' },

@@ -23,7 +23,7 @@ const FooterSection = () => {
               <p className="font-code text-sm text-neon-green mt-1">1.0</p>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Building the future through code. Join 500+ developers for 48 hours of innovation, 
+              Building the future through code. Join 500+ developers for 24 hours of innovation, 
               collaboration, and breakthrough ideas.
             </p>
           </div>
