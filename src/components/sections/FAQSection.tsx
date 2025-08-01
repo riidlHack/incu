@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const faqs = [
   {
     question: "Who can participate in Incuverse 1.0?",
-    answer: "Incuverse is open to students, recent graduates, and early-career professionals. You can participate solo or in teams of up to 4 people. No prior hackathon experience required!"
+    answer: "Incuverse is open to all the College students across India. You can participate in teams of 2 to 4 people. No prior hackathon experience required!"
   },
   {
     question: "How much does it cost to participate?",
@@ -25,16 +25,12 @@ const faqs = [
     answer: "Projects are evaluated on innovation, technical complexity, design, feasibility, and potential impact. Each track may have specific criteria outlined by our sponsor partners."
   },
   {
-    question: "What if I don't have a team?",
-    answer: "No problem! We have team formation sessions on Friday evening. You can also participate solo or find teammates in our Discord server before the event."
-  },
-  {
     question: "Are there mentors available?",
-    answer: "Yes! We have 50+ industry mentors from companies like Google, Microsoft, Meta, and top startups. They'll be available for 1-on-1 sessions throughout the weekend."
+    answer: "Yes! We have industry mentors from top startups and companies. They'll be available for 1-on-1 sessions throughout the weekend."
   },
   {
     question: "What about accommodation?",
-    answer: "The venue is open 24/7 during the hackathon with designated sleeping areas. We also have discounted rates at nearby hotels for those who prefer off-site accommodation."
+    answer: "The venue is open 24/7 during the hackathon with designated sleeping areas."
   },
   {
     question: "Can I submit to multiple tracks?",
@@ -45,7 +41,6 @@ const faqs = [
     answer: "You retain full ownership of any IP you create. Some sponsor challenges may offer licensing opportunities, but participation is always optional."
   }
 ];
-
 const FAQItem = ({ faq, index }: { faq: any, index: number }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -90,7 +85,7 @@ export const FAQSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="neon-text font-heading text-4xl md:text-6xl font-black uppercase tracking-tight mb-6">
-            FAQ
+            FAQ's
           </h2>
           <p className="text-muted-foreground font-heading uppercase tracking-wide">
             Everything you need to know
