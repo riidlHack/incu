@@ -1,0 +1,685 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    /* Incuverse Cyberpunk Theme */
+    --background: 220 13% 6%;
+    --foreground: 0 0% 100%;
+
+    --card: 220 13% 8%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 13% 8%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 163 100% 50%;
+    --primary-foreground: 220 13% 6%  ;
+
+    --secondary: 195 100% 50%;
+    --secondary-foreground: 220 13% 6%;
+
+    --muted: 220 13% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 84 100% 60%;
+    --accent-foreground: 220 13% 6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 15%;
+    --input: 220 13% 15%;
+    --ring: 163 100% 50%;
+
+    --radius: 1.5rem;
+
+    /* Custom Incuverse Colors */
+    --neon-green: 163 100% 50%;
+    --neon-cyan: 195 100% 50%;
+    --neon-lime: 84 100% 60%;
+    --glass-bg: 220 13% 8% / 0.2;
+    --glass-border: 163 100% 50% / 0.2;
+
+    /* Gradients */
+    --gradient-neon: linear-gradient(45deg, #00ffb7, #00bfff, #adff33);
+    --gradient-bg: linear-gradient(135deg, hsl(220 13% 4% / 0.9), hsl(220 13% 10% / 0.8));
+    --gradient-glass: linear-gradient(135deg, hsl(220 13% 8% / 0.1), hsl(220 13% 15% / 0.2));
+
+    /* Shadows */
+    --shadow-neon: 0 0 30px hsl(163 100% 50% / 0.3);
+    --shadow-glass: 0 10px 30px hsl(220 13% 4% / 0.3);
+    --shadow-hover: 0 20px 60px hsl(163 100% 50% / 0.2);
+
+    /* Font families */
+    --font-heading: 'Audiowide', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-code: 'JetBrains Mono', monospace;
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: box-shadow 0.3s ease, transform 0.3s ease;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode uses same cyberpunk theme */
+    --background: 220 13% 4%;
+    --foreground: 0 0% 100%;
+    --glass-bg: 220 13% 6% / 0.3;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    background-image: var(--gradient-bg);
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    background: hsl(var(--glass-bg));
+    border: 1px solid hsl(var(--glass-border));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: var(--radius);
+  }
+
+  .neon-text {
+    background: var(--gradient-neon);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 25px hsl(var(--neon-green) / 0.3));
+  }
+
+  .circuit-line {
+    position: absolute;
+    background: linear-gradient(90deg, transparent, hsl(var(--neon-green) / 0.3), transparent);
+    animation: circuit-flow 4s linear infinite;
+  }
+
+  .floating-code {
+    font-family: var(--font-code);
+    color: hsl(var(--neon-green) / 0.2);
+    animation: code-float 8s linear infinite;
+    pointer-events: none;
+  }
+
+  .hover-glow {
+    transition: var(--transition-glow);
+  }
+
+  .hover-glow:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover), inset 0 0 60px hsl(var(--neon-green) / 0.1);
+  }
+  
+  .bg-cover {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+
+}
+
+@layer utilities {
+  .animate-gradient-shift {
+    animation: gradient-shift 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-version {
+    animation: pulse-version 2s infinite;
+  }
+
+  .animate-circuit-flow {
+    animation: circuit-flow 4s linear infinite;
+  }
+
+  .animate-code-float {
+    animation: code-float 8s linear infinite;
+  }
+
+  .animate-grid-move {
+    animation: grid-move 20s linear infinite;
+  }
+
+  .animate-corner-pulse {
+    animation: corner-pulse 3s infinite;
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes pulse-version {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+@keyframes circuit-flow {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes code-float {
+  0% { transform: translateX(-50px); opacity: 0; }
+  10% { opacity: 0.3; }
+  90% { opacity: 0.3; }
+  100% { transform: translateX(calc(100vw + 50px)); opacity: 0; }
+}
+
+@keyframes grid-move {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+@keyframes corner-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+/*Domain section*/
+/* Section Title Styling */
+/* .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+} */
+
+/* Cards Container Grid Layout */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    justify-items: center; /* Center cards within their grid cells */
+    align-items: stretch; /* Cards will stretch to fill row height if content varies */
+}
+
+/* Individual Card Styling */
+.card {
+    width: 100%;
+    max-width: 400px;
+    height: 450px; /* Fixed height for consistent card appearance */
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex; /* Ensures .card-front fills the card */
+    flex-direction: column;
+    animation: fadeInUp 0.6s ease-out; /* Animation for card entrance */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Animation delay for the second card (if you have more, add more :nth-child rules) */
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+/* Card Front (Image background and text overlay) */
+.card-front {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures text is centered horizontally */
+    padding: 20px; /* Padding for text inside the card */
+}
+
+.card-front::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Overlay to darken image */
+    z-index: 1;
+}
+
+.card-front h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    text-align: center;
+    word-wrap: break-word; /* Prevents long words from overflowing */
+    max-width: 100%; /* Ensures text doesn't push container wider */
+}
+
+/* Section Heading (e.g., "Choose Your Challenge") */
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff; /* Hardcoded color */
+    position: relative;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2, #667eea);
+    background-size: 200% 100%;
+    border-radius: 2px;
+    animation: gradientMove 3s ease-in-out infinite;
+}
+
+/* Popup Overlay (The dimmed background when popup is active) */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark, semi-transparent background */
+    display: flex; /* Always flex as it's conditionally rendered in React */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* High z-index to appear on top */
+    backdrop-filter: blur(5px); /* Blurs content behind it */
+    opacity: 0; /* Start hidden for animation */
+    pointer-events: none; /* Disable interaction when hidden */
+    transition: opacity 0.3s ease-out; /* Smooth fade in/out */
+}
+
+.popup-overlay.active {
+    opacity: 1;
+    pointer-events: all; /* Enable interaction when active */
+}
+
+/* Popup Content Box */
+.popup-content {
+    background-image: linear-gradient(to right bottom, #171717, #191919, #1c1c1c, #1e1e1e, #212121, #232323, #242424, #262626, #272727, #292929, #2a2a2a, #2c2c2c);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh; /* Limits height, enables scrolling if content overflows */
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    transform: translateY(0); /* Base state for content slide-in transition */
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Smooth transitions */
+}
+
+/* Animation for Popup Content when Overlay becomes active */
+.popup-overlay.active .popup-content {
+    animation: popupSlideIn 0.3s ease-out;
+}
+
+/* Popup Header (Title and Close Button) */
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.popup-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ecf0f1; /* Hardcoded color */
+    margin: 0;
+}
+
+/* Close Button Styling */
+.close-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #ffffff; /* Hardcoded color */
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg);
+}
+
+/* Problem List (Inside the popup) */
+.problem-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.problem-list li {
+    background: #444; /* Darker grey background for list items */
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 4px solid #00ffb7; /* Neon green left border */
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+    word-wrap: break-word; /* Ensure text wraps */
+}
+
+.problem-list li:hover {
+    background: #555; /* Slightly lighter on hover */
+    transform: translateX(5px);
+}
+
+.problem-number {
+    font-weight: 700;
+    color: #00ffb7; /* Neon green for numbers */
+    margin-right: 10px;
+    display: inline-block; /* Helps align number with text */
+}
+
+/* Animations */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes popupSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive Design - Media Queries */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .section-heading {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        max-width: 350px;
+        height: 450px;
+    }
+
+    .card-front h2 {
+        font-size: 2rem;
+    }
+
+    .popup-content {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    .popup-title {
+        font-size: 1.5rem;
+    }
+
+    .problem-list li {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 520px) {
+    /* No 'body' padding change here, as per your instruction */
+    /* .body {
+        padding: 15px;
+    } */
+
+    .section-heading {
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+    }
+
+    .card {
+        max-width: 300px;
+        height: 400px;
+    }
+
+    .card-front h2 {
+        font-size: 1.8rem;
+    }
+
+    .popup-content {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .popup-title {
+        font-size: 1.3rem;
+    }
+
+    .problem-list li {
+        font-size: 0.85rem;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .close-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Team Section */
+.team-section {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: rgb(0, 0, 0);
+     }
+
+     .team-section h2 {
+      font-size: 2.5em;
+      color: #40eed1;
+      margin-bottom: 10px;
+     }
+
+     .team-section .intro-text {
+      font-size: 1.1em;
+      color: #0eba7e;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+     }
+
+     .team-category-section {
+      margin-bottom: 70px; /* Space between different categories */
+     }
+
+     .team-category-section h3 {
+      font-size: 1.8em;
+      color: #007bff;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      display: inline-block;
+     }
+
+     .team-members-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px 20px;
+      justify-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 0;
+     }
+
+     .team-member-card {
+      padding: 15px;
+      text-align: center;
+      background-color: black;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease-in-out;
+      width: 100%;
+      max-width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+
+     .team-member-card:hover {
+      transform: translateY(-5px);
+     }
+
+     .member-image-wrapper {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 15px;
+      border: 3px solid #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+
+     .member-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+     }
+
+     .default-image-placeholder {
+        width: 100%; /* Fills the wrapper */
+        height: 100%; /* Fills the wrapper */
+        border-radius: 50%; /* Make it circular */
+        background-color: #e0e0e0; /* A light grey circle */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8em; /* Optional: add text like "No Image" */
+        color: #888;
+     }
+
+
+     .member-name {
+      font-weight: 600;
+      margin-bottom: 5px;
+      font-size: 1.15em;
+      color: #1da99b;
+     }
+
+     .member-position {
+      font-size: 0.95em;
+      color: #21aa9d;
+      line-height: 1.3;
+     }
+
+     /* Placeholders for other sections */
+     .timeline-placeholder, .journey-placeholder {
+        padding: 60px 20px;
+        text-align: center;
+        background-color: #f0f0f0;
+        margin-top: 50px;
+     }
+     .journey-placeholder {
+        background-color: #e0e0e0;
+     }
+     
+     .mid{
+      display: flex;
+     }
+
+     .hover-glow-homePage {
+    transition: var(--transition-glow);
+    color: #FAF9F6;
+  }
