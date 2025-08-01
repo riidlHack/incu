@@ -5,17 +5,22 @@ const timelineEvents = [
   { 
     date: '⚙️31 July – 1 Aug',
     title: 'Domain and Problem Statements Released',
-    description: 'Registrations Open PPt submission and voice over ',
+    description: 'Registrations Open PP submission and voice over ',
   },
   {
-    date: '🧠 31 August',
+    date: '🧠 31st August',
     title: ' Idea Submission Deadline',
     description: 'Registration Closes (Can be extended if needed)',
   },
   {
-    date: '🎯2st Week of September',
+    date: '🎯2nd Week of September',
     title: 'Announcement of Shortlisted Teams',
     description: " Round 1 Grand Finale Teams Announced",
+  },
+  {
+    date: '🎓 3rd Week of September',
+    title: 'Optional Mentoring Rounds',
+
   },
   {
     date: '🏁 4th – 5th October 2025.',
@@ -75,11 +80,10 @@ const TimelineItem = ({ date, title, description, isLeft }) => {
         <div className={`w-1/2 ${isLeft ? 'pr-8' : ''}`}>
           {isLeft && (
             // <div className="bg-gradient-to-r from-green-500 to-blue-500 p-6 rounded-lg shadow-lg border border-gray-200 w-full ml-4">
-            <div className='p-6 rounded-3xl shadow-lg border border-neon-green/30 w-full ml-4 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer bg-[#0a0a0a] py-12 glow-desktop-hover'>
+            <div className='p-6 rounded-3xl shadow-lg border border-neon-green/30 w-full ml-4 transition-transform duration-300 ease-in-out hover:scale-80 cursor-pointer bg-[#0a0a0a] py-12 glow-desktop-hover'>
               <p className="text-sm text-[#00ffb7] mb-2 font-bold">{date}</p>
               <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
               <p className="text-gray-700 text-sm">{description}</p>
-               <div className="absolute inset-0 rounded-xl bg-white/5 opacity-0 hover:opacity-100 transition-opacity duration-300" />
             </div>
           )}
         </div>
