@@ -5,7 +5,7 @@ const timelineEvents = [
   { 
     date: '⚙️31 July – 1 Aug',
     title: 'Domain and Problem Statements Released',
-    description: 'Registrations Open PP submission and voice over ',
+    description: 'Registrations Open PPT submission and voice over ',
   },
   {
     date: '🧠 31st August',
