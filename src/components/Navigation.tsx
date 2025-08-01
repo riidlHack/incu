@@ -90,7 +90,7 @@ const Navigation = () => {
               ))}
               <a href="./Incuverse_PPT_Format.pptx" download>
                 <button className="w-full mt-4 glass-panel hover-glow font-heading px-4 py-2 bg-neon-green/20 border border-neon-green/30 text-neon-green hover:bg-neon-green hover:text-background transition-all duration-300 text-sm uppercase tracking-wide">
-                  Register
+                  Download PPT Format
                 </button>
               </a>
             </div>
