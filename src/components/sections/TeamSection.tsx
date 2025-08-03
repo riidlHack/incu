@@ -64,7 +64,7 @@ const allTeamMembers = [
   { name: 'Princy Karani', position: 'PR Core', image: pr_image_5, linkedin: 'https://www.linkedin.com/in/princy-karani-7a1621290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
   { name: 'Aryan Kadam', position: 'PR Core', image: pr_image_6, linkedin: '' },
   { name: 'Mahek Agnihotri', position: 'PR Core', image: pr_image_7, linkedin: '' },
-  { name: 'Disha Waghambare', position: 'PR Core', image: pr_image_8, linkedin: '' },
+  { name: 'Disha Waghambare', position: 'PR Core', image: pr_image_8, linkedin: 'https://www.linkedin.com/in/disha-waghambare-a21479378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
   { name: 'Vedant Alshi', position: 'PR Core', image: pr_image_9, linkedin: 'https://www.linkedin.com/in/vedant-alshi-71834a378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
   { name: 'Lavannya Sutar', position: 'PR Core', image: pr_image_10, linkedin: '' },
 
@@ -78,7 +78,7 @@ const allTeamMembers = [
   // Logistics
   { name: 'Tejal Kinjawade', position: 'Logistics Lead', image: logistics_image_1, linkedin: 'https://www.linkedin.com/in/tejal-kinjawade-977792280' },
   { name: 'Gargee Yellurkar', position: 'Logistics Core', image: logistics_image_2, linkedin: '' },
-  { name: 'Soham Narayankar', position: 'Logistics Core', image: logistics_image_3, linkedin: '' },
+  { name: 'Soham Narayankar', position: 'Logistics Core', image: logistics_image_3, linkedin: 'https://www.linkedin.com/in/soham-narayankar-064b3a289' },
   { name: 'Meet Nayak', position: 'Logistics Core', image: logistics_image_4, linkedin: 'https://www.linkedin.com/in/meetnayakjain1008?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
   { name: 'Garv Gandhi', position: 'Logistics Core', image: logistics_image_5, linkedin: 'https://www.linkedin.com/in/garv-gandhi9305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
   { name: 'Akash Giri', position: 'Logistics Core', image: logistics_image_6, linkedin: 'https://www.linkedin.com/in/akash-giri-684856309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
