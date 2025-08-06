@@ -109,7 +109,7 @@ export const FAQSection = () => {
               Can't find the answer you're looking for? Our team is here to help!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="mailto:riidlhack@gmail.com">
+              <a href="mailto:hackathon.riidl@somaiya.edu">
                 
                 <button className="glass-panel hover-glow font-heading px-6 py-3 border border-neon-cyan/30 text-neon-cyan hover:bg-neon-cyan/10 transition-all duration-300">
                 Email Us
