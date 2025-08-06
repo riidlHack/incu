@@ -3,7 +3,7 @@ import {Linkedin, Mail, Instagram } from "lucide-react";
 const FooterSection = () => {
   const socialLinks = [
     { icon: Linkedin, href: "https://www.linkedin.com/company/riidlhack", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:riidlhack@gmail.com", label: "Email" },
+    { icon: Mail, href: "mailto:hackathon.riidl@somaiya.edu", label: "Email" },
     { icon: Instagram, href: "https://www.instagram.com/riidl_hack", label: "Instagram"}
   ];
 
