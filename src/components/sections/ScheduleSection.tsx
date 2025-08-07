@@ -92,7 +92,7 @@ const TimelineItem = ({ date, title, description, isLeft }) => {
         <div className="w-4 h-4 bg-[#adff33] rounded-full absolute left-1/2 transform -translate-x-1/2 z-10 border-2 border-white shadow-md"></div>
 
         {/* Right content block */}
-        <div className={`w-1/2 ${!isLeft ? 'pl-12' : ''}`}>
+        <div className={`w-1/2 ${!isLeft ? 'pl-4' : ''}`}>
           {!isLeft && (
             <div className='p-6 rounded-3xl shadow-lg border border-neon-green/30 w-full ml-6 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer relative bg-[#0a0a0a] py-12 glow-desktop-hover'>
               <p className="text-sm text-[#00ffb7] mb-2 font-bold">{date}</p>
