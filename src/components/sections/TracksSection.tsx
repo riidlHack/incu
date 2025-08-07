@@ -119,6 +119,15 @@ const HackathonDomains = () => {
                     </div>
                 </div>
             )}
+
+            <div className="flex justify-center mt-10 mb-10">
+                <a href="./Incuverse_PPT_Format.pptx" download>
+                  <button className="glass-panel hover-glow font-heading px-8 py-4 bg-neon-green/20 border border-neon-green/30 text-neon-green hover:bg-neon-green hover:text-background transition-all duration-300 text-sm uppercase tracking-wide">
+                    Download PPT Format
+                  </button>
+                </a>
+            </div>
+            
         </div>
     );
 };
