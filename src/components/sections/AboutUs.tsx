@@ -18,8 +18,7 @@ const About = () => {
         <div className="text-gray-200 text-center">
           {/* Headings are responsive: text size changes on medium screens and up */}
           <h3 className="font-heading text-2xl text-neon-green mb-4">
-            Incubating Innovation at riidl aya dinner krke
-            Somaiya Vidyavihar University
+            Incubating Innovation at riidl Somaiya Vidyavihar University
           </h3>
           
           {/* Paragraph text is responsive: text size changes on medium screens and up */}
