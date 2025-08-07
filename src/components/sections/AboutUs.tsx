@@ -7,7 +7,7 @@ const About = () => {
     <section className="container mx-auto px-4 py-16">
       
       {/* Title is responsive: text size changes on medium screens and up */}
-      <h1 className="neon-text font-heading text-4xl md:text-6xl font-black tracking-tight mb-8 text-center">About riidl</h1>
+      <h1 className="neon-text font-heading text-4xl md:text-6xl font-black uppercase tracking-tight mb-8 text-center">About us</h1>
 
       {/* Main glass panel container is responsive: max width on large screens */}
       <div className="glass-panel mx-auto max-w-6xl p-8 lg:p-12 transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer hover-glow hover-glow:hover">
@@ -18,8 +18,7 @@ const About = () => {
         <div className="text-gray-200 text-center">
           {/* Headings are responsive: text size changes on medium screens and up */}
           <h3 className="font-heading text-2xl text-neon-green mb-4">
-            Incubating Innovation at riidl aya dinner krke
-            Somaiya Vidyavihar University
+            Incubating Innovation at riidl Somaiya Vidyavihar University
           </h3>
           
           {/* Paragraph text is responsive: text size changes on medium screens and up */}
