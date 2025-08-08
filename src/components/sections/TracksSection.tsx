@@ -83,7 +83,7 @@ const HackathonDomains = () => {
             <div className="flex justify-center mb-8">
                 <div className="glass-panel inline-block p-4 hover-glow">
                     <p className="font-code text-sm md:text-base font-bold text-white">
-                        Click on domain card to view problem statments
+                        Click on domain card to view problem statements
                     </p>
                 </div>
             </div>
