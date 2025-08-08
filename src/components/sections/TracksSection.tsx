@@ -24,7 +24,7 @@ const HackathonDomains = () => {
             backgroundImage: domainFintech,
             problems: [
                 'PSF01 [Trading Address Verification]: Strengthen compliance by automating the verification of trading addresses against multiple external data sources to produce a confidence score.',
-                'PSF02 [AI Deal Checker]: AI that automatically reads financial agreements to find any mistakes. This saves a lot of time and helps prevents expensive errors. Mitigate the risks and reduce manual effort in post-trade operations by using AI to validate high volumes of financial term sheets.', 
+                'PSF02 [AI Deal Checker]: AI that automatically reads financial agreements to find any mistakes. This saves a lot of time and helps prevents expensive errors. Mitigate the risks and reduce manual effort in post-trade operations by using AI to validate high volumes of financial term sheets.',
                 'PSF03 [Next-Gen Authentication & Fraud Detection]: Develop an AI-driven system to detect and prevent fraudulent mobile banking registrations by analyzing user behavior, location, and device data to create a dynamic risk score for password-less authentication.',
                 'PSF04 [PFM Tools for Low-Income Households]: Design a user-friendly Personal Finance Management (PFM) app for low-income Indians, focusing on easy expense tracking and clear debt visualization.',
                 'PSF05 [Tailored Micro-Insurance Distribution Models]: Propose innovative fintech models for micro-insurance (embedded, parametric) that simplify purchase and claims for underserved rural and semi-urban areas.',
@@ -80,10 +80,18 @@ const HackathonDomains = () => {
         <div className="container">
             <h1 className="neon-text font-heading text-4xl md:text-6xl font-black uppercase tracking-tight mb-6 text-center">Domains</h1>
             <h2 className="section-heading">Choose Your Challenge</h2>
+            <div className="flex justify-center mb-8">
+                <div className="glass-panel inline-block p-4 hover-glow">
+                    <p className="font-code text-sm md:text-base font-bold text-white">
+                        Click on domain card to view problem statments
+                    </p>
+                </div>
+            </div>
 
             <div className="cards-container">
                 {Object.keys(domainsData).map((key) => (
                     <div
+                        key={key}
                         className="card"
                         onClick={() => openPopup(key)}
                     >
@@ -121,9 +129,9 @@ const HackathonDomains = () => {
             )}
             <div className="flex justify-center mt-10 mb-10">
                 <a href="./Incuverse_PPT_Format.pptx" download>
-                  <button className="glass-panel hover-glow font-heading px-8 py-4 bg-neon-green/20 border border-neon-green/30 text-neon-green hover:bg-neon-green hover:text-background transition-all duration-300 text-sm uppercase tracking-wide">
-                    Download PPT Format
-                  </button>
+                    <button className="glass-panel hover-glow font-heading px-8 py-4 bg-neon-green/20 border border-neon-green/30 text-neon-green hover:bg-neon-green hover:text-background transition-all duration-300 text-sm uppercase tracking-wide">
+                        Download PPT Format
+                    </button>
                 </a>
             </div>
         </div>
