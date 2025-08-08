@@ -15,13 +15,13 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { label: "Home", href: "#hero" },
     { label: "About", href: "#about" },
     { label: "Schedule", href: "#schedule" },
     { label: "Prizes", href: "#prizes" },
     { label: "Domains", href: "#tracks" },
     { label: "Sponsors", href: "#sponsors" },
-    { label: "Team", href: "#team" }
+    { label: "Team", href: "#team" },
+    { label: "FAQ's", href: "#faqs" }
   ];
 
   const scrollToSection = (href: string) => {
