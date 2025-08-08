@@ -2,24 +2,24 @@ import { Trophy, Award, Star, Target } from "lucide-react";
 
 const prizes = [
   {
-    title: "Innovation Award",
-    amount: "Rs XX,000",
+    title: "Seed Fund", //Innnovation Award
+    amount: "Rs 30,000",
     description: "",
     icon: Star,
     gradient: "from-gray-200 to-gray-400",
     rank: "2nd Place"
   },
   {
-    title: "Grand Prize",
-    amount: "Rs X,XX,XXX",
+    title: "Seed Fund", //Grand Award
+    amount: "Rs 60,000",
     description: "",
     icon: Trophy,
     gradient: "from-amber-300 via-yellow-400 to-amber-600",
     rank: "1st Place"
   },
   {
-    title: "Impact Prize",
-    amount: "Rs XX,XXX",
+    title: "Seed Fund",//Impact prize
+    amount: "Rs 20,000",
     description: "",
     icon: Target,
     gradient: "from-orange-400 to-red-600",
@@ -33,18 +33,29 @@ export const PrizeSection = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="neon-text font-heading text-4xl md:text-6xl font-black uppercase tracking-tight mb-6">
+          <h2 className="neon-text font-heading text-4xl md:text-6xl font-black  tracking-tight mb-6">
             Prize Pool
           </h2>
           <div className="glass-panel inline-block p-4 hover-glow">
             <p className="font-code text-2xl md:text-4xl font-bold text-neon-green">
-              Rs X,XX,XXX+
+              Rs 1,00,000+
             </p>
             <p className="text-muted-foreground font-heading uppercase tracking-wide">
               Total Rewards
             </p>
           </div>
         </div>
+
+        {/*Note*/}
+        <div className="text-center mb-16">
+          <div className="glass-panel inline-block p-4 hover-glow">
+            <p className="font-code text-sm md:text-base font-bold text-neon-green">
+              Seed fund amount may increase as we move closer to the Hackathon.
+            </p>
+
+          </div>
+        </div>
+
 
         {/* Prize Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
@@ -90,16 +101,15 @@ export const PrizeSection = () => {
         </div>
 
         {/* Additional Info */}
-        {/* <div className="mt-12 text-center">
+        <div className="mt-12 text-center">
           <div className="glass-panel p-6 hover-glow inline-block">
             <p className="text-muted-foreground font-heading uppercase tracking-wide text-sm mb-2">
-              Plus Equipment & Swag Worth
-            </p>
-            <p className="font-code text-xl font-bold text-neon-cyan">
-              $20,000+
+              This is just the initial funding once you are incubated at riidl SVU,<br></br>
+              we'll help you build your MVP and complete your product validation <br/>
+              and you'll be eligible for various Government Grants, <br/>Seed funds and investment opportunities
             </p>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
