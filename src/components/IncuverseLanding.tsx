@@ -31,6 +31,10 @@ export const IncuverseLanding = () => {
         <section id="hero">
           <HeroSection />
         </section>
+
+        <section id="about">
+          <About />
+        </section>
         
         <section id="schedule">
           <ScheduleSection />
