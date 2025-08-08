@@ -33,7 +33,7 @@ export const PrizeSection = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="neon-text font-heading text-4xl md:text-6xl font-black  tracking-tight mb-6">
+          <h2 className="neon-text font-heading text-4xl md:text-6xl font-black uppercase tracking-tight mb-6">
             Prize Pool
           </h2>
           <div className="glass-panel inline-block p-4 hover-glow">
