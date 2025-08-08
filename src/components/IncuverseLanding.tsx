@@ -7,6 +7,7 @@ import TeamSection from "./sections/TeamSection";
 import SponsorsSection from "./sections/SponsorsSection";
 import FAQSection from "./sections/FAQSection";
 import FooterSection from "./sections/FooterSection";
+import About from "./sections/AboutUs";
 
 const BackgroundGrid = () => (
   <div 
@@ -30,6 +31,10 @@ export const IncuverseLanding = () => {
       <main>
         <section id="hero">
           <HeroSection />
+        </section>
+
+        <section id="about">
+          <About />
         </section>
         
         <section id="schedule">
