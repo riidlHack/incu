@@ -1,6 +1,6 @@
 import React from 'react';
-// import riidlAbout from "../../image/riidl_about.jpeg";
-// import workshopImage from "../../image/workshop_riidl.jpg";
+import riidlAbout from "../../image/riidl_about.jpeg";
+import workshopImage from "../../image/workshop_riidl.jpg";
 
 const About = () => {
   return (
@@ -37,18 +37,18 @@ const About = () => {
 
         {/* Images section: switches from a column layout on small screens to a row layout on small screens and up */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
-{/*           <img 
+          <img 
             src={riidlAbout}
-            alt="Students working in the RIIDL lab"
+            alt="Conference at riidl"
             // Images are full width on mobile, and half width on small screens and up
             className="w-full sm:w-1/2 rounded-lg shadow-lg object-cover h-54 my-4"
           />
           <img
             src={workshopImage}
-            alt="A successful startup pitching at an event"
+            alt="riidl Workshop"
             // Images are full width on mobile, and half width on small screens and up
             className="w-full sm:w-1/2 rounded-lg shadow-lg object-cover h-54 my-4"
-          /> */}
+          />
         </div>
       </div>
     </section>
@@ -56,5 +56,6 @@ const About = () => {
 };
 
 export default About;
+
 
 
