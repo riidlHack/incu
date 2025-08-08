@@ -7,6 +7,7 @@ import TeamSection from "./sections/TeamSection";
 import SponsorsSection from "./sections/SponsorsSection";
 import FAQSection from "./sections/FAQSection";
 import FooterSection from "./sections/FooterSection";
+import About from "./sections/About;
 
 const BackgroundGrid = () => (
   <div 
