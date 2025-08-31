@@ -8,9 +8,9 @@ const timelineEvents = [
     description: 'Registrations Open PPT submission and voice over ',
   },
   {
-    date: '🧠 31st August',
+    date: '🧠 7th September',
     title: ' Idea Submission Deadline',
-    description: 'Registration Closes (Can be extended if needed)',
+    description: 'Registration Closes',
   },
   {
     date: '🎯2nd Week of September',
