@@ -18,7 +18,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<Results />} />
+          <Route path="/" element={<Results />} />
         </Routes>
       </BrowserRouter>
            <Analytics /> {/* Add the Analytics component here */}
