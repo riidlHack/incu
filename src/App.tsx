@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { Analytics } from "@vercel/analytics/react"; // Import Analytics
-import Result from "./pages/Results";
 import Results from "./pages/Results";
 const queryClient = new QueryClient();
 
