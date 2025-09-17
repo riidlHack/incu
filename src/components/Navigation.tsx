@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+// import Results from "@/pages/Results";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navigation = () => {
     { label: "Domains", href: "#tracks" },
     { label: "Sponsors", href: "#sponsors" },
     { label: "Team", href: "#team" },
-    { label: "FAQ's", href: "#faqs" }
+    { label: "FAQ's", href: "#faq" }
   ];
 
   const scrollToSection = (href: string) => {
@@ -59,9 +60,9 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <a href="./Incuverse_PPT_Format.pptx" download>
+            <a href="/Results">
               <button className="glass-panel hover-glow font-heading px-4 py-2 bg-neon-green/20 border border-neon-green/30 text-neon-green hover:bg-neon-green hover:text-background transition-all duration-300 text-sm uppercase tracking-wide">
-                Download PPT Format
+                Results
               </button>
             </a>
           </div>
@@ -90,9 +91,9 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              <a href="./Incuverse_PPT_Format.pptx" download>
+              <a href="/Results">
                 <button className="w-full mt-4 glass-panel hover-glow font-heading px-4 py-2 bg-neon-green/20 border border-neon-green/30 text-neon-green hover:bg-neon-green hover:text-background transition-all duration-300 text-sm uppercase tracking-wide">
-                  Download PPT Format
+                  Results
                 </button>
               </a>
             </div>
