@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { Analytics } from "@vercel/analytics/react"; // Import Analytics
+import Result from "./pages/Results";
+import Results from "./pages/Results";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -17,7 +19,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Result />} />
         </Routes>
       </BrowserRouter>
            <Analytics /> {/* Add the Analytics component here */}
