@@ -92,8 +92,6 @@ const Results: React.FC = () => {
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neon-green text-center mb-6">
         Results
       </h1>
-
-      {/* Search */}
       <input
         type="text"
         placeholder="Search results..."
@@ -101,8 +99,6 @@ const Results: React.FC = () => {
         onChange={(e) => setSearch(e.target.value)}
         className={theme.search}
       />
-
-      {/* Table */}
       <div className="overflow-x-auto">
         <table className="table-auto border-collapse border border-gray-600 w-full min-w-[600px] md:min-w-full">
           <thead>
