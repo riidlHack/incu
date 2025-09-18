@@ -1,4 +1,4 @@
-"use client";
+
 import React, { useState } from "react";
 
 const theme = {
@@ -139,3 +139,4 @@ const Results: React.FC = () => {
 };
 
 export default Results;
+
