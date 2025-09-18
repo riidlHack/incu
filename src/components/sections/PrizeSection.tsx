@@ -11,7 +11,7 @@ const prizes = [
   },
   {
     title: "Seed Fund", //Grand Award
-    amount: "Rs 60,000",
+    amount: "Rs 50,000",
     description: "",
     icon: Trophy,
     gradient: "from-amber-300 via-yellow-400 to-amber-600",
