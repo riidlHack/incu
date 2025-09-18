@@ -1,6 +1,7 @@
 import backgroundImage from '../../image/background_image.jpeg';
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FloatingCode = ({ code, delay, className = "" }: { code: string; delay: number; className?: string }) => (
   <div
@@ -40,6 +41,7 @@ const CircuitLines = () => (
 
 export const HeroSection = () => {
   return (
+    
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Image - UPDATED PATH */}
       <div
@@ -91,11 +93,11 @@ export const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://unstop.com/o/cYvIijH?lb=Qt7tWF7u">
+          <Link to="/results">
             <Button size="lg" className="glass-panel hover-glow font-heading text-lg px-8 py-4 bg-neon-green/20 border border-neon-green/30 text-neon-green hover:bg-neon-green hover:text-background transition-all duration-300">
-              Register Now
+              Results
             </Button>
-          </a>
+          </Link>
           <a href="https://chat.whatsapp.com/KhrcYpU25QS7KkI5dvFjwb">
           <Button size="lg" variant="outline" className="glass-panel hover-glow font-heading text-lg px-8 py-4 border-neon-cyan/30 text-neon-cyan hover:bg-neon-cyan/10 hover-glow:color-[#FAF9F6]">
             Join riidl community
