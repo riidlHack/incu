@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import Results from "../pages/Results";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,11 +60,11 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <a href="/Results">
+            <Link to="/results">
               <button className="glass-panel hover-glow font-heading px-4 py-2 bg-neon-green/20 border border-neon-green/30 text-neon-green hover:bg-neon-green hover:text-background transition-all duration-300 text-sm uppercase tracking-wide">
                 Results
               </button>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -91,11 +91,11 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              <a href="/Results">
+              <Link to="/results">
                 <button className="w-full mt-4 glass-panel hover-glow font-heading px-4 py-2 bg-neon-green/20 border border-neon-green/30 text-neon-green hover:bg-neon-green hover:text-background transition-all duration-300 text-sm uppercase tracking-wide">
                   Results
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         )}
