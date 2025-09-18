@@ -61,7 +61,8 @@ const teamsData: CsvRow[] = [
   {"Team Name": "The Anomoly", "Leader Name": "Aaditya Jaiswar", "PS_ID": "PSF04"},
   {"Team Name": "Binary Builders", "Leader Name": "Shivam Gupta", "PS_ID": "PSA07"},
   {"Team Name": "Data Seekers", "Leader Name": "Daksh Sood", "PS_ID": "PSA07"},
-  {"Team Name": "Nova-Minds", "Leader Name": "Soham Sharma", "PS_ID": "PSF07"}
+  {"Team Name": "Nova-Minds", "Leader Name": "Soham Sharma", "PS_ID": "PSF07"},
+  {"Team Name": "Skill Issue", "Leader Name": "Sarvesh Bhanarkar", "PS_ID": "PSF04"}
 ];
 
 const Results: React.FC = () => {
@@ -139,4 +140,5 @@ const Results: React.FC = () => {
 };
 
 export default Results;
+
 
