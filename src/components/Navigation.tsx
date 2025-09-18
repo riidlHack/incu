@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-// import Results from "@/pages/Results";
+import Results from "../pages/Results";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
