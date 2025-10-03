@@ -2,6 +2,7 @@ import backgroundImage from '../../image/background_image.jpeg';
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Users } from "lucide-react";
 import { Link } from "react-router-dom";
+import Marquee from "react-fast-marquee";
 
 const FloatingCode = ({ code, delay, className = "" }: { code: string; delay: number; className?: string }) => (
   <div
@@ -107,6 +108,18 @@ export const HeroSection = () => {
         {/* { Timer - Moved here to be below the CTA buttons } */}
         
       </div>
+      <Marquee play speed={100} gradient={false} className="absolute bottom-4 w-full">
+        <div className="animate-marquee inline-block text-gray-200 font-semibold text-base md:text-lg tracking-wide">
+          🚀 Total Submissions: <span className="text-neon-green">345</span> &nbsp;•&nbsp;
+          🤖 AI: <span className="text-neon-green">215</span> &nbsp;•&nbsp;
+          💰 Fintech: <span className="text-neon-green">143</span> &nbsp;•&nbsp;
+          🧑‍🎓 Total Participants: <span className="text-neon-green">1268</span> &nbsp;•&nbsp;
+          🎓 Unique Colleges: <span className="text-neon-green">279</span> &nbsp;•&nbsp;
+          🏛 Departments — Engineering: <span className="text-neon-green">1166</span>, Arts & Science: <span className="text-neon-green">66</span>, Others: <span className="text-neon-green">23</span>, Management: <span className="text-neon-green">13</span> &nbsp;•&nbsp;
+          👨‍💻 Male: <span className="text-neon-green">949</span> &nbsp;•&nbsp;
+          👩‍💻 Female: <span className="text-neon-green">316</span>
+        </div>
+      </Marquee>
     </section>
   );
 };

@@ -244,5 +244,4 @@ export const SponsorsSection = () => {
     </section>
   );
 };
-
 export default SponsorsSection;
