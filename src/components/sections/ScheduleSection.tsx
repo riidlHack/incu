@@ -3,29 +3,20 @@ import React, { useState, useEffect, useRef } from 'react';
 // Mock data for the timeline events
 const timelineEvents = [
   { 
-    date: '⚙️31 July – 1 Aug',
-    title: 'Domain and Problem Statements Released',
-    description: 'Registrations Open PPT submission and voice over ',
+    date: '⚙️21 Feb – 22 Feb',
+    title: 'Weekend 1',
+    description: 'Intro and Launch',
   },
   {
-    date: '🧠 7th September',
-    title: ' Idea Submission Deadline',
-    description: 'Registration Closes',
+    date: '🧠 23 Feb - 27 Feb',
+    title: 'Live Execution',
+    description: 'Expert Sessions',
   },
   {
-    date: '🎯2nd Week of September',
-    title: 'Announcement of Shortlisted Teams',
-    description: " Round 1 Grand Finale Teams Announced",
-  },
-  {
-    date: '🎓 3rd Week of September',
-    title: 'Optional Mentoring Rounds',
-
-  },
-  {
-    date: '🏁 4th – 5th October 2025.',
-    title: 'Hackathon Day (On-Ground Event)',
-  },
+    date: '🎯28th Feb - 1 Mar',
+    title: 'Weekend 2',
+    description: " Performance Data Review and Handover and Final Showcase",
+  }
 ];
 
 /**

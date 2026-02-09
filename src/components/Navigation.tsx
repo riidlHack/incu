@@ -45,9 +45,9 @@ const Navigation = () => {
               onClick={() => scrollToSection('#hero')}
               className="font-heading text-xl font-black text-neon-green hover:text-neon-cyan transition-colors duration-300"
             >
-              INCUVERSE
+              Challenge
             </button>
-          </div>
+          </div>`z`
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -60,11 +60,6 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <Link to="/results">
-              <button className="glass-panel hover-glow font-heading px-4 py-2 bg-neon-green/20 border border-neon-green/30 text-neon-green hover:bg-neon-green hover:text-background transition-all duration-300 text-sm uppercase tracking-wide">
-                Results
-              </button>
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -91,11 +86,6 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              <Link to="/results">
-                <button className="w-full mt-4 glass-panel hover-glow font-heading px-4 py-2 bg-neon-green/20 border border-neon-green/30 text-neon-green hover:bg-neon-green hover:text-background transition-all duration-300 text-sm uppercase tracking-wide">
-                  Results
-                </button>
-              </Link>
             </div>
           </div>
         )}
